@@ -14,4 +14,5 @@ Examples of rules:  Open "RuleList.nb"
 Further examples are in /SimplifySum/ExamplesFromPaper. 
 
 See "Automated Simplification of Large Symbolic Expressions" for much more detail. 
-  
+
+Note that Mathematica files are not plain text, and do not look right outside of the Mathematica editor.   

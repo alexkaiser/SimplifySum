@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       145,          7]
-NotebookDataLength[    189871,       4112]
-NotebookOptionsPosition[    188673,       4077]
-NotebookOutlinePosition[    189013,       4092]
-CellTagsIndexPosition[    188970,       4089]
+NotebookDataLength[    191202,       4148]
+NotebookOptionsPosition[    189925,       4111]
+NotebookOutlinePosition[    190266,       4126]
+CellTagsIndexPosition[    190223,       4123]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -210,6 +210,41 @@ ETBdqfCYdQ3IvV+egGmj1YbcIHr3dmMwfeh1rTKI/vWzAUwf+NqybR2QdpvZ
 DqZ5yqQYLgJphxoZMH3l2KVHf4H064+/wLSN1+y8f0Dai3MumJ7TynyqruaV
 45SpbGD6wpFMd+/aV46WedlgGgDIWK1r
   "]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+  "(*", "                                                                     \
+ ", "*)"}], 
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "Set", " ", "the", " ", "maximum", " ", "acceptable", " ", "norm", " ", 
+    "for", " ", "running", " ", "PSLQM"}], "                    ", "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{
+    "If", " ", "rational", " ", "coefficients", " ", "are", " ", "too", " ", 
+     "large"}], ",", " ", 
+    RowBox[{
+    "in", " ", "terms", " ", "of", " ", "number", " ", "of", " ", 
+     "digits"}]}], "  ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{"reduce", " ", "this", " ", 
+    RowBox[{"constant", "."}]}], 
+   "                                                ", "*)"}], 
+  RowBox[{
+  "(*", "                                                                     \
+ ", "*)"}]}]], "Input",
+ CellChangeTimes->{{3.5859524110913763`*^9, 3.58595243612582*^9}, {
+  3.5859525145540113`*^9, 3.5859526873488493`*^9}}],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{
+   RowBox[{"maxNormPSLQM", " ", "=", " ", 
+    RowBox[{"10", "^", "5"}]}], ";"}], " "}]], "Input",
+ CellChangeTimes->{{3.585952441610166*^9, 3.5859524500805063`*^9}}],
 
 Cell[BoxData[
  RowBox[{"(*", " ", 
@@ -3584,8 +3619,7 @@ Cell[BoxData[
               RowBox[{
                RowBox[{"Bound", "[", 
                 RowBox[{"n", ",", "h"}], "]"}], ",", "20"}], "]"}], " ", ">", 
-             " ", 
-             RowBox[{"10", "^", "5"}]}], ",", " ", 
+             " ", "maxNormPSLQM"}], ",", " ", 
             RowBox[{"Return", "[", "]"}]}], " ", "]"}], ";", " ", 
           "\[IndentingNewLine]", "\[IndentingNewLine]", 
           RowBox[{"If", "[", 
@@ -3688,7 +3722,7 @@ Cell[BoxData[
    3.518171444657934*^9}, 3.55449338423698*^9, 3.5544934399846487`*^9, {
    3.554498238581354*^9, 3.5544983764129143`*^9}, 3.55493313982734*^9, {
    3.554933309427021*^9, 3.5549333443171377`*^9}, {3.5549335111284723`*^9, 
-   3.554933511838613*^9}}],
+   3.554933511838613*^9}, {3.585952488129538*^9, 3.585952488691165*^9}}],
 
 Cell[BoxData[
  RowBox[{
@@ -4076,7 +4110,7 @@ confirmed.\\n\>\"", "]"}], ";"}], "  ", "\[IndentingNewLine]", ",", " ",
    3.554495489861451*^9, {3.554502179602037*^9, 3.554502207336876*^9}}]
 },
 WindowSize->{1040, 740},
-WindowMargins->{{12, Automatic}, {Automatic, 0}},
+WindowMargins->{{Automatic, 231}, {Automatic, 0}},
 FrontEndVersion->"7.0 for Mac OS X x86 (32-bit) (February 18, 2009)",
 StyleDefinitions->"Default.nb"
 ]
@@ -4095,25 +4129,27 @@ Cell[545, 20, 5529, 135, 478, "Input"],
 Cell[6077, 157, 92, 1, 27, "Input"],
 Cell[6172, 160, 1627, 39, 118, "Input"],
 Cell[7802, 201, 468, 10, 27, "Input"],
-Cell[8273, 213, 362, 7, 27, "Input"],
-Cell[8638, 222, 106, 3, 27, "Input"],
-Cell[8747, 227, 21524, 459, 2068, "Input"],
-Cell[30274, 688, 23114, 447, 1783, "Input"],
-Cell[53391, 1137, 4454, 102, 373, "Input"],
-Cell[57848, 1241, 9370, 207, 778, "Input"],
-Cell[67221, 1450, 9815, 202, 628, "Input"],
-Cell[77039, 1654, 8818, 184, 763, "Input"],
-Cell[85860, 1840, 6435, 138, 628, "Input"],
-Cell[92298, 1980, 23358, 440, 1573, "Input"],
-Cell[115659, 2422, 14481, 294, 1063, "Input"],
-Cell[130143, 2718, 8465, 172, 703, "Input"],
-Cell[138611, 2892, 33207, 798, 988, "Input"],
-Cell[171821, 3692, 8776, 185, 733, "Input"],
-Cell[180600, 3879, 1931, 45, 208, "Input"],
-Cell[182534, 3926, 341, 10, 27, "Input"],
-Cell[182878, 3938, 494, 14, 27, "Input"],
-Cell[183375, 3954, 1314, 28, 88, "Input"],
-Cell[184692, 3984, 3977, 91, 343, "Input"]
+Cell[8273, 213, 1023, 26, 88, "Input"],
+Cell[9299, 241, 201, 5, 27, "Input"],
+Cell[9503, 248, 362, 7, 27, "Input"],
+Cell[9868, 257, 106, 3, 27, "Input"],
+Cell[9977, 262, 21524, 459, 2068, "Input"],
+Cell[31504, 723, 23114, 447, 1783, "Input"],
+Cell[54621, 1172, 4454, 102, 373, "Input"],
+Cell[59078, 1276, 9370, 207, 778, "Input"],
+Cell[68451, 1485, 9815, 202, 628, "Input"],
+Cell[78269, 1689, 8818, 184, 763, "Input"],
+Cell[87090, 1875, 6435, 138, 628, "Input"],
+Cell[93528, 2015, 23358, 440, 1573, "Input"],
+Cell[116889, 2457, 14481, 294, 1063, "Input"],
+Cell[131373, 2753, 8465, 172, 703, "Input"],
+Cell[139841, 2927, 33229, 797, 988, "Input"],
+Cell[173073, 3726, 8776, 185, 733, "Input"],
+Cell[181852, 3913, 1931, 45, 208, "Input"],
+Cell[183786, 3960, 341, 10, 27, "Input"],
+Cell[184130, 3972, 494, 14, 27, "Input"],
+Cell[184627, 3988, 1314, 28, 88, "Input"],
+Cell[185944, 4018, 3977, 91, 343, "Input"]
 }
 ]
 *)
